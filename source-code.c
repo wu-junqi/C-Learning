@@ -14,7 +14,7 @@
 
 	return 0;
 }*/
-
+/*
 int main(void)
 {
 	int ten = 10;
@@ -24,6 +24,17 @@ int main(void)
 	printf("%d minus %d is %d\n", ten);
 	printf("Doing it right: ");
 	printf("%d minus %d is %d\n", ten, two, ten - two);
-	
+
+	return 0;
+}*/
+
+int main(void)
+{
+	printf("Size of short int is %d\n",sizeof(short int));
+	printf("Size of int is %d\n",sizeof(int));
+	printf("Size of long int is %d\n",sizeof(long int));
+	printf("Size of long long int is %d\n",sizeof(long long int));
+	printf("Size of unsigned int is %d\n",sizeof(unsigned int));
+
 	return 0;
 }
