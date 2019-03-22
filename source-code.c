@@ -38,7 +38,7 @@ int main(void)
 
 	return 0;
 }*/
-
+/*
 int main(void)
 {
 	for (unsigned int x = 0; x < 3; x++)
@@ -48,16 +48,60 @@ int main(void)
 			if (x == 0)
 			{
 				printf("%#o\t", i);
+				// %o unsigned octal integer
+				// %#o starting at 0
 			} else if (x == 1)
 			{
 				printf("%d\t", i);
+				// %d decimal integer
 			} else
 			{
 				printf("%#x\t", i);
+				// %x %X unsigned hexadecimal integer
+				// %#x %#X starting at 0x or 0X
 			}
 		}
 		printf("\n");
 	}
+
+	return 0;
+}*/
+/*
+int main(void)
+{
+	int i = 2147483647;
+	unsigned int j = 4294967295;
+
+	printf("%d %d %d\n", i, i + 1, i + 2);
+	printf("%u %u %u\n", j, j + 1, j + 2);
+	// %u unsigned decimal integer
+	return 0;
+}*/
+/*
+int main(void)
+{
+	unsigned int un = 3000000000;
+	short end = 200;
+	long big = 65537;
+	long long verybig = 12345678908642;
+
+	printf("un = %u and not %d\n", un, un);
+	printf("end = %hd and not %d\n", end, end);
+	printf("big = %ld and not %hd\n", big, big);
+	printf("verybig = %lld and not %ld\n", verybig, verybig);
+
+	return 0;
+}*/
+
+int main(void)
+{
+	char beep = 7;
+	char nerf = '\n';
+	char quote = '\"';
+
+	printf("Listen to the beep.%c\n", beep);
+	printf("I want you to%cstudy hard\n", nerf);
+	printf("%cApple%c is not an apple.\n", quote, quote);
 
 	return 0;
 }
