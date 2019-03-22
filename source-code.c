@@ -27,7 +27,7 @@ int main(void)
 
 	return 0;
 }*/
-
+/*
 int main(void)
 {
 	printf("Size of short int is %d\n",sizeof(short int));
@@ -35,6 +35,29 @@ int main(void)
 	printf("Size of long int is %d\n",sizeof(long int));
 	printf("Size of long long int is %d\n",sizeof(long long int));
 	printf("Size of unsigned int is %d\n",sizeof(unsigned int));
+
+	return 0;
+}*/
+
+int main(void)
+{
+	for (unsigned int x = 0; x < 3; x++)
+	{
+		for (unsigned int i = 0; i < 16; i++)
+		{
+			if (x == 0)
+			{
+				printf("%#o\t", i);
+			} else if (x == 1)
+			{
+				printf("%d\t", i);
+			} else
+			{
+				printf("%#x\t", i);
+			}
+		}
+		printf("\n");
+	}
 
 	return 0;
 }
