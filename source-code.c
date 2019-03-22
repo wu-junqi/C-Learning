@@ -92,7 +92,7 @@ int main(void)
 
 	return 0;
 }*/
-
+/*
 int main(void)
 {
 	char beep = 7;
@@ -102,6 +102,32 @@ int main(void)
 	printf("Listen to the beep.%c\n", beep);
 	printf("I want you to%cstudy hard\n", nerf);
 	printf("%cApple%c is not an apple.\n", quote, quote);
+
+	return 0;
+}*/
+/*
+int main(void)
+{
+	int hex = 0xf;
+	printf("%x, %d\n", hex, hex);
+	return 0;
+}*/
+
+int main(void)
+{
+	float about = 32000.0;
+	double abet = 2.14e9;
+	long double dip = 5.3e-5;
+
+	printf("%f can be written %e\n", about, about);
+	// %f float, decimal counting method
+	// %e float, e counting method
+	printf("And it's %a in hexadecimal, powers of 2 notation\n", about);
+	// %a float, hexadecimal and p counting method
+	printf("%f can be written %e\n", abet, abet);
+	printf("%Lf can be written %Le\n", dip, dip);
+	// %Lf long double, decimal counting method
+	// %Le long double, e counting method
 
 	return 0;
 }
